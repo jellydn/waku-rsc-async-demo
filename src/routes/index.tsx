@@ -1,30 +1,48 @@
 /// Async Server Component
 /// <reference types="react/experimental" />
 import { Suspense } from "react";
+import { Header } from "../components/Header.js";
+import { Separator } from "../components/Separator.js";
+import { Counter } from "../components/Counter.js";
+import { Box } from "../components/Box.js";
+import { CountDown } from "../components/CountDown.js";
+import { RandomBox } from "../components/RandomBox.js";
+import { luckNumber } from "../actions/winner.js";
 
-import { Counter } from "./Counter.js";
-import { CountDown } from "./CountDown.js";
-import { Box } from "./Box.js";
-import { Separator } from "./Separator.js";
+type ServerFunction<T> = T extends (...args: infer A) => infer R
+	? (...args: A) => Promise<R>
+	: never;
 
 const App = ({ name }: { name: string }) => {
 	const date = new Date();
-	date.setSeconds(date.getSeconds() + 10);
+	date.setSeconds(date.getSeconds() + 30);
 	return (
 		<div className="container p-4 mx-auto border-2 border-blue-400 border-dashed">
-			<h1 className="text-3xl font-bold underline">Hello {name}!!</h1>
+			<Header site={name} />
+
 			<h3 className="text-lg">This is a server component.</h3>
 			<Suspense fallback="Pending...">
 				<ServerMessage />
 			</Suspense>
 			<Separator />
+
 			<Counter />
 			<Separator />
+
 			<Box>
 				<p className="text-xl font-bold">Count down</p>
 				<p>
 					The big event is happening <CountDown target={date.toISOString()} />.
 				</p>
+			</Box>
+			<Separator />
+
+			<Box>
+				<RandomBox
+					generateLuckyNumber={
+						luckNumber as unknown as ServerFunction<typeof luckNumber>
+					}
+				/>
 			</Box>
 		</div>
 	);
