@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "waku build --with-ssr",
+    "vercel:build": "waku build --with-vercel",
+    "deno:build": "waku build --with-deno",
     "check": "biome check --apply src",
     "dev": "waku dev --with-ssr",
     "start": "waku start --with-ssr"
@@ -15,7 +17,7 @@
     "react": "18.3.0-canary-5bcade5fc-20231208",
     "react-dom": "18.3.0-canary-5bcade5fc-20231208",
     "react-server-dom-webpack": "18.3.0-canary-5bcade5fc-20231208",
-    "waku": "0.18.0"
+    "waku": "0.18.1"
   },
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
@@ -24,6 +26,6 @@
     "@types/react-dom": "18.2.18",
     "@vitejs/plugin-react": "4.2.1",
     "typescript": "5.3.3",
-    "vite": "5.0.8"
+    "vite": "5.0.10"
   }
 }

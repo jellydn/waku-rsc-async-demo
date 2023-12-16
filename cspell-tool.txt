@@ -3,3 +3,4 @@ hono
 Waku
 WAKU
 nodenext
+biomejs
