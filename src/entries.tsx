@@ -7,7 +7,7 @@ export default defineEntries(
 	// renderEntries
 	async (input) => {
 		return {
-			App: <App name={input || "Waku"} />,
+			App: <App name={input || "Waku RSC Demo"} />,
 		};
 	},
 	// getBuildConfig
