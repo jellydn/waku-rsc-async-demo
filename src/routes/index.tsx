@@ -7,7 +7,7 @@ import { Counter } from "../components/Counter.js";
 import { Box } from "../components/Box.js";
 import { CountDown } from "../components/CountDown.js";
 import { RandomBox } from "../components/RandomBox.js";
-import { luckNumber } from "../actions/winner.js";
+import { luckyNumber } from "../actions/winner.js";
 
 type ServerFunction<T> = T extends (...args: infer A) => infer R
 	? (...args: A) => Promise<R>
@@ -40,7 +40,7 @@ const App = ({ name }: { name: string }) => {
 			<Box>
 				<RandomBox
 					generateLuckyNumber={
-						luckNumber as unknown as ServerFunction<typeof luckNumber>
+						luckyNumber as unknown as ServerFunction<typeof luckyNumber>
 					}
 				/>
 			</Box>
