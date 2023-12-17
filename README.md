@@ -3,9 +3,23 @@
   <img alt="Version" src="https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
+[![IT Man - A quick look at Waku - the minimal React framework [Vietnamese]](https://i.ytimg.com/vi/-sGIPwXZT70/hqdefault.jpg)](https://www.youtube.com/watch?v=-sGIPwXZT70)
+
+## 🚀 Introduction
+
+This demo project showcases the capabilities of Waku, a minimal yet powerful React framework. Waku is designed to embrace the future of React development, focusing on React Server Components (RSCs) to provide an enhanced user and developer experience.
+
+### ✨ [Demo](https://waku-rsc.deno.dev)
+
 ## 📋 Requirements
 
 - [bun.sh](https://bun.sh/)
+
+## 💻 Stack
+
+- [Waku - The minimal React framework](https://waku.gg/)
+- [Biome - One toolchain for your web project](https://biomejs.dev/)
+- [Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.](https://tailwindcss.com/)
 
 ## 📦 Installation
 
@@ -33,8 +47,12 @@ bun run build
 
 ## Resources
 
-- [dai-shi/waku: ⛩️ The minimal React framework](https://github.com/dai-shi/waku)
+- [dai-shi/waku: ⛩ The minimal React framework](https://github.com/dai-shi/waku)
+- [Waku Diagrams](https://github.com/dai-shi/waku/discussions/151)
+- ['use server' directive – React](https://react.dev/reference/react/use-server)
+- ['use client' directive – React](https://react.dev/reference/react/use-client)
+- [useTransition – React](https://react.dev/reference/react/useTransition)
 
 ## 🌟 Show Your Support
 
-Give a ⭐️ if this project helped you!
+Give a ⭐ if this project helped you!
