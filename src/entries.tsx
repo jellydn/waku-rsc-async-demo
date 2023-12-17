@@ -3,7 +3,7 @@ import { defineEntries } from "waku/server";
 
 const App = lazy(() => import("./routes/index.js"));
 
-// TODO: Will revise this again after https://github.com/dai-shi/waku/issues/246
+// TODO: Will revise this again after https://github.com/dai-shi/waku/issues/246 is done
 export default defineEntries(
 	// renderEntries
 	async (input) => {
@@ -21,7 +21,8 @@ export default defineEntries(
 	},
 	// getSsrConfig
 	async (pathStr) => {
-		switch (pathStr) {
+		const { pathname } = new URL(pathStr, "http://localhost");
+		switch (pathname) {
 			case "/":
 				return {
 					input: "",
