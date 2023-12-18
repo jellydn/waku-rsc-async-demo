@@ -11,6 +11,8 @@ This demo project showcases the capabilities of Waku, a minimal yet powerful Rea
 
 ### ✨ [Demo](https://waku-rsc.deno.dev)
 
+[![Demo Video](https://i.gyazo.com/d53f0bd5075a69ffd8bc656207e00012.gif)](https://gyazo.com/d53f0bd5075a69ffd8bc656207e00012)
+
 ## 📋 Requirements
 
 - [bun.sh](https://bun.sh/)
