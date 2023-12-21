@@ -16,6 +16,7 @@ This demo project showcases the capabilities of Waku, a minimal yet powerful Rea
 ## 📋 Requirements
 
 - [bun.sh](https://bun.sh/)
+- [RSC Devtools](https://chromewebstore.google.com/detail/rsc-devtools/jcejahepddjnppkhomnidalpnnnemomn)
 
 ## 💻 Stack
 
