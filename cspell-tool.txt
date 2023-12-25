@@ -4,3 +4,4 @@ Waku
 WAKU
 nodenext
 biomejs
+consola
