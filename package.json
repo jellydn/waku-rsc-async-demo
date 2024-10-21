@@ -12,24 +12,24 @@
     "start": "waku start --with-ssr"
   },
   "dependencies": {
-    "@hono/node-server": "1.11.1",
+    "@hono/node-server": "1.13.2",
     "consola": "3.2.3",
-    "hono": "4.3.7",
-    "react": "18.3.0-canary-5bcade5fc-20231208",
-    "react-dom": "18.3.0-canary-5bcade5fc-20231208",
-    "react-server-dom-webpack": "18.3.0-canary-5bcade5fc-20231208",
-    "waku": "0.18.1"
+    "hono": "4.6.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-server-dom-webpack": "18.3.0-next-fecc288b7-20221025",
+    "waku": "0.21.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.7.3",
-    "@swc/core": "1.5.7",
-    "@types/react": "18.2.73",
-    "@types/react-dom": "18.2.23",
-    "@vitejs/plugin-react": "4.2.1",
-    "autoprefixer": "10.4.19",
-    "postcss": "8.4.38",
-    "tailwindcss": "3.4.3",
+    "@biomejs/biome": "1.9.4",
+    "@swc/core": "1.7.36",
+    "@types/react": "18.3.11",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.3",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.47",
+    "tailwindcss": "3.4.14",
     "typescript": "next",
-    "vite": "5.2.11"
+    "vite": "5.4.9"
   }
 }
