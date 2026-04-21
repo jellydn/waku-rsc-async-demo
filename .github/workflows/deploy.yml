@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Deno
-        uses: denoland/setup-deno@v1
+        uses: denoland/setup-deno@v1.5.2
         with:
           deno-version: 1.46.3
 
@@ -30,7 +30,7 @@ jobs:
         run: "bun install && bun run deno:build"
 
       - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
+        uses: denoland/deployctl@1.13.1
         with:
           project: "waku-rsc"
           entrypoint: "./serve.ts"
